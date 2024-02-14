@@ -1,0 +1,279 @@
+﻿body {
+    background-color: white;
+    font-size: 18px;
+    text-align: center; 
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.results-container {
+    margin: 350px auto; 
+    margin-left: 35%;
+    max-width: 1440px;
+    overflow: hidden;
+    display: flex; 
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 1, 1, 0.1);
+    border-radius: 20px 20px 20px 20px;
+    width: 28%;
+}
+
+.column1,
+.column2 {
+    padding: 20px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    flex:1;
+    width: 50%;
+}
+
+.column1 {
+    border-radius: 20px;
+    background-color: #593CF8;
+    height: 450px;
+}
+
+.column2 {
+    text-align: left; 
+    height: 450px;
+}
+
+.your-result {
+    color: hsl(241, 100%, 89%);
+    font-size: 18px;
+}
+
+.score {
+    color: hsl(0, 0%, 100%);
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.great {
+    color: hsl(0, 0%, 100%);
+    margin-top: 10%;
+}
+
+.percentile {
+    color: hsl(241, 100%, 89%);
+    font-weight: 400;
+}
+
+.circle-container {
+    background: linear-gradient(to bottom, #472ADA, transparent);
+    font-weight: 500;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 22%;
+    margin-top: 13%;
+    color: hsl(241, 100%, 89%);
+}
+
+.summary {
+    font-weight: 800;
+}
+
+ul {
+    list-style: none;
+}
+
+.reaction,
+.memory,
+.verbal,
+.visual {
+    display: block;
+    border-radius: 7px;
+    margin-bottom: 5%;
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    padding-top: 10px;
+    margin-left: -3%;
+}
+
+.reaction-text,
+.memory-text,
+.verbal-text,
+.visual-text {
+    margin-left: 5%;
+    font-weight: 800;
+}
+
+img {
+    width: 7%;
+    margin-left: 5%;
+}
+
+.eighty,
+.ninety-two {
+    margin-left: 25%;
+    color:hsl(224, 30%, 27%);
+    font-weight: 800;
+}
+
+.sixty-one,
+.seventy-two {
+    margin-left: 30%;
+    color: hsl(224, 30%, 27%);
+    font-weight: 800;
+}
+
+.reaction {
+    background-color: #FFF6F5;
+}
+
+.reaction-text {
+    color:hsl(0, 100%, 67%);
+}
+
+.memory {
+    background-color: #FFFBF2;
+}
+
+.memory-text {
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+    background-color: #F2FAFA;
+}
+
+.verbal-text {
+    color: hsl(166, 100%, 37%);
+}
+
+.visual {
+    background-color: #F3F3FD;
+}
+
+.visual-text {
+    color: hsl(234, 85%, 45%);
+}
+
+
+.button {
+    display: inline-block;
+    color: #ffffff;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-color: #303B59;
+    outline: none;
+    appearance: none;
+    padding: 10px 20px;
+    width: 80%;
+    margin-left: 16%;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: #593CF8;
+ }
+
+footer {
+    text-align: center;
+    padding: 1em;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+@media only screen and (max-width: 1280px) {
+    body {
+        font-size: 14px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+   .results-container {
+        margin: 0; 
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch; 
+   }
+
+   .column1,
+   .column2 {
+        width: 100%; 
+        margin: 0; 
+        padding: 20px; 
+        box-sizing: border-box; 
+        flex-direction: column;
+        align-items: center;
+   }
+
+   .column1 {
+        border-radius: 0px 0px 20px 20px; 
+   }
+
+   .circle-container {
+       margin: 0 auto;
+       width: 120px;
+       height: 120px;
+   }
+
+   .your-result {
+       width: 100%;
+       text-align: center;
+   }
+
+    ul {
+        width: 100%; 
+        padding: 0; 
+        list-style: none; 
+        text-align: center; 
+    }
+
+    li {
+        display: flex;
+    }
+
+    .button {
+        display: block; 
+        width: 100%;
+        margin: 20px auto;
+        padding: 10px 20px;
+    }
+
+    .reaction,
+    .memory,
+    .verbal,
+    .visual {
+        width: 100%;
+        margin: 10px 0; 
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-right: 10px;
+    }
+
+    img {
+        width: 20px; 
+        height: 20px;
+    }
+
+    .reaction-text,
+    .memory-text,
+    .verbal-text,
+    .visual-text {
+        margin-left: 10px;
+    }
+
+    .eighty, .ninety-two, .sixty-one, .seventy-two {
+        margin-left: auto; 
+    }
+
+
+    }
+
